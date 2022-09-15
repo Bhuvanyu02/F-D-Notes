@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Document</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+    <body>
+            <button onclick="Palindrome()">
+                    PALINDROME
+            </button>
+            <button onclick="Prime()">
+                PRIME NUMBER
+            </button>
+            <button onclick="Max()">
+                Max Number
+            </button>
+            <button onclick="cal()">CALCULATOR</button>
+        <script>
+        
+         function Palindrome(){
+            var s="aba";
+            var s1="";
+            var n=s.length;
+            for(var i=n-1;i>=0;i--){
+                    s1+=s[i];
+            }
+            if (s1==s) {
+                console.log("YES STRING IS A PALINDROME");
+                alert("YES STRING IS A PALINDROME")
+            }
+            else{
+                console.log("Noooooooooooooooooooooooooooooooooooooooo");
+                alert("Noooooooooooooooooooooooooooooooooooooooo")
+            }
+        }
+                        // 1) CHECK IF STRING IS PALINDROME
+
+        function Prime(){
+            var j=10;
+            var count=0;
+            for(var i=2;i<j/2;i++){
+                    if(j%i==0){
+                        count++;
+                    }
+            }
+            if (count==0) {
+                console.log("PRIME NUMBER");
+                alert("PRIME NUMBER")
+            }
+            else{
+                console.log("NOT A PRIME NUMBER");
+                alert("NOT A PRIME NUMBER")
+            }
+        }
+                         // 2) IF NUMBER IS PRIME
+           function Max(){
+                var string2="abcdeaa";
+                var scount=0;
+                for(var i=0;i<string2.length;i++){
+                    if (string2[i]=="a") {
+                        scount++;
+                    }
+                }
+            
+                console.log(scount);
+                alert("NUMBER Of a is " + scount);
+            }
+                    // 3) MAX COUNT OF A DIGIT IN A STRING 
+            function cal(){
+                var i1=prompt("ENTER NUMBER ONE");
+                i1=parseInt(i1);
+                var i2=prompt("ENTER NUMBER 2");
+                i2=parseInt(i2);
+                var op=prompt("ENTER OPERATOR    +  -  / * ");
+                switch (op) {
+                    case "+":
+                        console.log(i1+i2);
+                        alert(i1+i2)
+                        break;
+                    
+                        case "-":
+                        console.log(i1-i2);
+                        alert(i1-i2)
+                        break;
+
+                        case "/":
+                        console.log(i1/i2);
+                        alert(i1/i2)
+                        break;
+                        
+                        case "*":
+                        console.log(i1*i2);
+                        alert(i1*i2)
+                        break;                    
+                }
+            }
+                 // 4) CALCULATOR
+       </script>
+    </body>
+</html>

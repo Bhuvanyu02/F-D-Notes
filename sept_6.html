@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        var n =Number(prompt("Enter Total Number of elements "));
+        var arr1=new Array;
+        for(var i=0;i<n;i++){
+            var s=String(prompt("Enter Element"));
+            arr1[i]=s;
+        }
+        var c=1;
+        var max=0;
+        var d;
+        for(var i=0;i<arr1.length;i++){
+            c=1;
+          for(var j=0;j<arr1.length;j++){
+              if(i==j){
+                  continue;
+              }
+              if(arr1[i]==arr1[j]){
+                  c++;
+              }
+          }
+          if(c>max){
+              max=c;
+              d=arr1[i];
+          }
+        }
+        console.log(d + " ( "+max +" times" + " ) ");
+        
+    </script>
+  </body>
+</html>

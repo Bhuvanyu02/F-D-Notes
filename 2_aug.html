@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            var x=20;
+           console.log(`I am ${x} years old`)
+
+           console.log("I am "+x+" years old")
+
+           var myaccess=0;
+           const read=1;
+           const write=3;
+           const execute=4;
+
+            myaccess=myaccess|read|write;   //to GRANT PERMISSION we use OR OPERATOR
+           console.log(myaccess);
+           var msg=(myaccess&read)?"yes":"no"  // to CHECK THE PERMISSION  we use And Operator
+           console.log(msg)
+           if (msg=="no") {
+                console.log("OMPHOOO VMRO")
+           }
+           else{
+            console.log("OHHHH NOOOO")
+           }
+        //    var op=Math.round(Math.random(1,100)*100)
+        //    switch (op) {
+        //     case 100:
+        //             console.log(op)                
+        //         break;
+           
+        //     default:
+        //     console.log(op)
+        //         break;
+        //    }
+                // SWITCH CASE
+
+        //    for loop 
+        //    for-in loop 
+        //    for-each loop
+        
+        
+        // while loop
+        // do-while loop
+        
+        
+        // var person={
+        //     name:"yo yo",
+        //     age:19
+        //  }
+        //  var a=0
+        //  var x=""
+        //  for(let a in person){
+        //     x+=person[a]
+        //     console.log(x)
+        // }
+         
+         //console.log(person.name +"  "+ person.age)
+
+
+
+            var a=12;
+            if (a>=0) {
+                console.log("POSITIVE")
+            }
+            else{
+                console.log("NEGATIVE")
+            }
+            if (a%2==0) {
+                    console.log("even")
+            }
+            else{
+                console.log("odd")
+            }
+            var s1=20
+            var s2=10
+            var s3=90
+            if (s1==s2 && s2==s3) {
+                console.log("EQUILATERAL TRIANGLE")
+            }
+            else if (s1==s2 || s2==s3 || s1==s3){
+                console.log("Isoceles")
+            }
+            else{
+                console.log("Scalene")
+            }
+        // +ve / -ve number
+        // Even / odd
+        // type of triangle
+
+
+        </script>  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TASK</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            #div1{
+                border: solid 2px black;
+                width: 200px;
+            }
+                #div1:hover{
+                        background-color: aqua;
+                }
+        </style>
+    </head>
+    <body>
+            <div id="div1">
+                <h1 id="h12" ondblclick="changefs()">Yo bero</h1>
+            </div>
+                    <!-- setTimeout(func, time (ms) ) -->
+        <script >
+            function changefs(){
+              document.getElementById("div1").style.fontSize="50px";  
+            }
+
+
+            // var x=setTimeout(change,3000);
+            var y=setInterval(change,1000);
+            var w=100;
+            function change(){
+                    w*=1.5;
+                document.getElementById("div1").style.width= w+"px";
+            }
+            //clearTimeout(x);
+
+        </script>
+    </body>
+</html>

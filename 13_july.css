@@ -1,0 +1,22 @@
+h2{
+    color:blueviolet;
+}
+
+.qw{
+    color: brown;
+}
+
+.box{
+    background-color: red;
+    margin: 10px;
+    padding: 5px;
+    display: inline;
+}
+.box1{
+    /* display: none; */
+    background-color: red;
+    margin: 10px;
+    padding: 5px;
+    display: inline;
+      visibility:hidden ; /* space is not gone */
+}

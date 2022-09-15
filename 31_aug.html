@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=Number(prompt("Enter Number"));
+function sq(n){
+    var square=0;
+    while(n>0){
+        var d=n%10;
+        square+=d*d;
+        n=Math.floor(n/10);
+    }
+    return square;
+}
+function check (n){
+    var arr=[];
+    arr.push(n);
+    while(true){
+        if(n==1){
+            return true;
+        }
+        n=sq(n);
+        if(arr.includes[n]){
+            return false;
+        }
+        arr.push(n);
+    }
+    return false;
+}
+if(check(n)){
+    console.log("Yes");
+}
+else{
+    console.log("No");
+}
+
+    </script>
+</body>
+</html>
